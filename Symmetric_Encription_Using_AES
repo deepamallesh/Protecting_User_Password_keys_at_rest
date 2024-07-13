@@ -62,7 +62,6 @@ def decrypt_file(file_path, passphrase):
         salt = f.read(16)
         iv_fek = f.read(16)
         enc_fek = f.read()
-
     # Derive the key from the passphrase using PBKDF2
     kdf = PBKDF2HMAC(
         algorithm=hashes.SHA256(),
