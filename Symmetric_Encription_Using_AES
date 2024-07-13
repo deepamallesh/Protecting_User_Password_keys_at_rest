@@ -7,7 +7,6 @@ from cryptography.hazmat.primitives import padding
 from getpass import getpass
 
 backend = default_backend()
-
 def encrypt_file(file_path, passphrase):
     # Generate a random File Encryption Key (FEK)
     fek = os.urandom(32)  # AES-256 requires a 32-byte key
