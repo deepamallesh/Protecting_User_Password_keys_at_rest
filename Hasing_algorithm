@@ -11,7 +11,6 @@ def store_password_in_file(username, hashed_password, filename):
     with open(filename, 'a') as f:
         f.write(f"{username}:{hashed_password.decode('utf-8')}\n")
     print(f"Password hashed and stored in {filename}")
-
 # Example usage
 def main():
     filename = 'passwords.txt'
